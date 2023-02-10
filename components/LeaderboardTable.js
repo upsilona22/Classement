@@ -42,11 +42,11 @@ export default function LeaderboardTable({ leaderboard }) {
 
     let columns = [
         {
-            title: 'Name',
+            title: 'Nom',
             field: 'Name',
         },
         {
-            title: 'Demolitions',
+            title: 'Démolitions',
             field: 'Demolitions',
             defaultSort: 'desc',
             render: (data) => {
@@ -54,7 +54,7 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Demolitions Rank',
+            title: 'Rang démolitions',
             field: 'DemolitionsRank',
             defaultSort: 'asc'
         },
@@ -67,16 +67,16 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Exterminations Rank',
+            title: 'Rang exterminations',
             field: 'ExterminationsRank',
             defaultSort: 'asc'
         },
         {
-            title: 'Country',
+            title: 'Pays',
             field: 'Country'
         },
         {
-            title: 'Last Update',
+            title: 'Derniere mise à jour',
             field: 'Last Update',
             defaultSort: 'asc'
         },
