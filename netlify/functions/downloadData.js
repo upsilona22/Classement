@@ -1,3 +1,4 @@
+const XMLHttpRequest = require('xhr2');
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "https://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json?dl=0");
 xhr.send();
