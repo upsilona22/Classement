@@ -1,13 +1,15 @@
-const XMLHttpRequest = require('xhr2');
-const xhr = new XMLHttpRequest();
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+ 
+var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json?dl=0");
-xhr.send();
-xhr.responseType = "json";
-xhr.onload = () => {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    const data = xhr.response;
-    console.log(data);
-  } else {
-    console.log(`Error: ${xhr.status}`);
-  }
+ 
+xhr.onreadystatechange = function () {
+    console.log("readyState = " + this.readyState + ", status = " + this.status);
+    if (this.readyState == 4 && this.status == 200) {
+        var result = this.responseText;
+        console.log(result);
+    }
 };
+ 
+xhr.send();
+
