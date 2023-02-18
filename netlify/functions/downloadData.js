@@ -1,5 +1,7 @@
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
+let dbx = new Dropbox({fetch: fetch});
+
 
 exports.handler = async function(event, context) {
     try {
