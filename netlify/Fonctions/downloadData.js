@@ -3,7 +3,7 @@ const Dropbox = require('dropbox').Dropbox;
 
 exports.handler = async function(event, context) {
     try {
-        const response = await dbx.filesDownload({path: "https://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json?dl=0"});
+        const response = await dbx.filesDownload({path: "https://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json"});
 
         if (response.status !== 200) {
             return {
