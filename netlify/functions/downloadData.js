@@ -1,24 +1,29 @@
-const fileType = require('file-type');
+const fetch = require('isomorphic-fetch');
+const Dropbox = require('dropbox').Dropbox;
 
-exports.handler = async () => {
- 
-  // Use a PDF
-  const file = 'hhttps://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json?dl=0'
-  // Or even an iamge
-  //const file = 'https://example.com/sample.jpg'
-  
-  const response = await fetch(file);
-  const status_code = response.status
-  const content_type = response.headers.get('content-type')
-  const buffer = await response.buffer();
-  const type = await fileType.fromBuffer(buffer)
+exports.handler = async function(event, context) {
+    try {
+        const response = await dbx.filesDownload({path: "https://www.dropbox.com/s/lxvr2j4r51bi5xx/leaderboard.json?dl=0"});
 
-  return {
-    statusCode: status_code,
-    headers: {
-      'Content-Type': content_type,
-    },
-    isBase64Encoded: true,
-    body: buffer.toString('base64')
-  }
+        if (response.status !== 200) {
+            return {
+                statusCode: response.status,
+                message: "Dropbox error"
+            }
+        }
+
+        const data = JSON.parse(response.result.fileBinary);
+
+        return {
+            statusCode: 200,
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data)
+        }
+    } catch(err) {
+        console.log(err)
+        return {
+            statusCode: 502,
+            message: "Error connecting to dropbox"
+        }
+    }
 }
