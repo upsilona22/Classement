@@ -1,31 +1,16 @@
-const fetch = require('isomorphic-fetch');
-const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({fetch: fetch});
+const { TOKEN, WEB3_KEY, NFT_PORT_KEY } = process.env;
 
+const fs = require("fs");
+const axios = require("axios").default;
+const { Client, GatewayIntentBits, ModalBuilder, TextInputBuilder, TextInputStyle, ActionRowBuilder, InteractionType } = require("discord.js");
 
-exports.handler = async function(event, context) {
-    try {
-        const response = await dbx.filesDownload({path: "https://www.dropbox.com/s/lxvr2j4r51bi5xx/"});
+client.login("TOKEN").catch(console.error);
 
-        if (response.status !== 200) {
-            return {
-                statusCode: response.status,
-                message: "Dropbox error"
-            }
-        }
+const { Web3Storage, File, Blob } = require("web3.storage");
+const Web3Client = new Web3Storage({ token: WEB3_KEY });
 
-        const data = JSON.parse(response.result.fileBinary);
+var waitingRequests = {};
 
-        return {
-            statusCode: 200,
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify(data)
-        }
-    } catch(err) {
-        console.log(err)
-        return {
-            statusCode: 502,
-            message: "Error connecting to dropbox"
-        }
-    }
-}
+client.on("ready", function() {
+    console.log("ONLINE");
+});
