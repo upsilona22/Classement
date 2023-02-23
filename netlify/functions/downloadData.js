@@ -1,33 +1,30 @@
-const { TOKEN, WEB3_KEY, NFT_PORT_KEY } = process.env;
-
+require("dotenv").config();
 const fs = require("fs");
-const axios = require("axios").default;
+const { Web3Storage, getFilesFromPath } = require("web3.storage");
+const { createClient } = require("@supabase/supabase-js");
 
 const token = process.env.WEB3_TOKEN;
+const storage = new Web3Storage({ token });
 
-const { Web3Storage, File, Blob } = require("web3.storage");
-const Web3Client = new Web3Storage({ token: WEB3_KEY });
+const supabase = createClient(
+	process.env.SUPABASE_URL,
+	process.env.SUPABASE_ANON_KEY
+);
 
-var waitingRequests = {};
-
-client.on("ready", function() {
-    console.log("ONLINE");
-});
-    const fileUpload = async (name) => {
-        try {
-            const files = await getFilesFromPath("leaderboard.json");
-            const cid = await storage.put(files, {
-                name: `${name}.json`,
-                wrapWithDirectory: false,
-            });
-            console.log(cid);
-            return cid;
-        } catch (error) {
-            console.log(error);
-            return;
-        }
-    };
-}
+const fileUpload = async (name) => {
+	try {
+		const files = await getFilesFromPath("./file.json");
+		const cid = await storage.put(files, {
+			name: `${name}.json`,
+			wrapWithDirectory: false,
+		});
+		console.log(cid);
+		return cid;
+	} catch (error) {
+		console.log(error);
+		return;
+	}
+};
 
 const saveCID = async (cid, tags) => {
     try {
