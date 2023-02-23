@@ -69,5 +69,9 @@ export default function Home({leaderboard, totals, time}) {
       totals,
       time
     },
-    // Next.js re-generate the page:
+        // Next.js re-generate the page:
     // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
+  };
+}
