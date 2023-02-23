@@ -101,7 +101,7 @@ export default function LeaderboardTable({ leaderboard }) {
             } else {
                 return {
                     backgroundColor: "#5397c7",
-                    color; "#ffffff",
+                    color: "#ffffff",
                 }
             }
         },
