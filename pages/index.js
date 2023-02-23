@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import LeaderboardTable from '@components/LeaderboardTable'
 const fetch = require('isomorphic-fetch');
-
 export default function Home({leaderboard, totals, time}) {
   return (
     <div className="container">
@@ -10,7 +9,6 @@ export default function Home({leaderboard, totals, time}) {
         <title>Classement démolitions</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <Header title="Bienvenue sur le classement des démolitions francophones!" />
         <p className="description">
@@ -25,34 +23,23 @@ export default function Home({leaderboard, totals, time}) {
           Nombre de @#victimes#@ atteint en A REFORMULER  {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
           et {time.seconds} secondes
         </p>
-         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
-      <img src="/img/RL back.jpg" alt="" />
-    </section>
-    <script src="/app.js"></script>
-  </body>
-</html>
-  
-       
+        
       </main>
       <LeaderboardTable leaderboard={leaderboard}/>
     </div>
-)        
+  )
 }
 
-
-export async function getStaticProps(context) {
-  let leaderboard = 
-    await fetch("https://classementdemolitionsfrancophone.netlify.app/.netlify/functions/downloadData")
-      .then(function(response) {
-        if (response.status >= 400) {
-          console.log(response);
+ export async function getStaticProps(context) {
+   let leaderboard = 
+     await fetch("https://classementdemolitionsfrancophone.netlify.app/.netlify/functions/downloadData")
+       .then(function(response) {
+         if (response.status >= 400) {
+           console.log(response);
           return {};
         }
         return response.json();
       });
-
   let totalDemos = 0;
   let totalExterms = 0;
   let totalPlayers = 0;
@@ -64,22 +51,18 @@ export async function getStaticProps(context) {
     totalExterms += playerExterms;
     totalPlayers ++;
   }
-
   let days = Math.floor(3 * totalDemos / 60 / 60 / 24);
   let hours = Math.floor(3 * totalDemos / 60 / 60) - (days * 24);
   let minutes = Math.floor(3 * totalDemos / 60) - (days * 24 * 60) - (hours * 60);
   let seconds = (3 * totalDemos) - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
-
   let time = {
     days, hours, minutes, seconds
   }
-
   let totals = {
     players: totalPlayers,
     demos: totalDemos,
     exterms: totalExterms,
   }
-
   return {
     props: {
       leaderboard,
@@ -88,7 +71,3 @@ export async function getStaticProps(context) {
     },
     // Next.js re-generate the page:
     // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 60, // In seconds
-  };
-}
