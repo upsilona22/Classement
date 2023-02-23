@@ -25,13 +25,8 @@ export default function Home({leaderboard, totals, time}) {
           Nombre de @#victimes#@ atteint en A REFORMULER  {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
           et {time.seconds} secondes
         </p>
-        
-      </main>
-      <LeaderboardTable leaderboard={leaderboard}/>
-    </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
-          impedit.
+         <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         </p>
       </div>
       <img src="/img/RL back.jpg" alt="" />
@@ -39,7 +34,12 @@ export default function Home({leaderboard, totals, time}) {
     <script src="/app.js"></script>
   </body>
 </html>
-  )
+  
+       
+      </main>
+      <LeaderboardTable leaderboard={leaderboard}/>
+    </div>
+)        
 }
 
 
