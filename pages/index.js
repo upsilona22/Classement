@@ -28,7 +28,6 @@ export default function Home({leaderboard, totals, time}) {
          <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         </p>
-      </div>
       <img src="/img/RL back.jpg" alt="" />
     </section>
     <script src="/app.js"></script>
