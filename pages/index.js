@@ -29,7 +29,6 @@ export default function Home({leaderboard, totals, time}) {
       </main>
       <LeaderboardTable leaderboard={leaderboard}/>
     </div>
- <h1>Welcome to White</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
           impedit.
