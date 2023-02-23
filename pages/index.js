@@ -20,8 +20,8 @@ export default function Home({leaderboard, totals, time}) {
           amenant à un total de {totals.exterms.toLocaleString()} exterminations
         </p>
         <p>
-          Nombre de @#victimes#@ atteint en A REFORMULER  {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
-          et {time.seconds} secondes
+          Le total des victimes ont mis {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
+          et {time.seconds} secondes pour respawn.
         </p>
         
       </main>
