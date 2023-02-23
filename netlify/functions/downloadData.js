@@ -5,39 +5,29 @@ exports.handler = async function(event, context) {
     body: JSON.stringify({
     "1": {
         "Name": "JOJO",
-        "Demolitions": 3685,
-        "Exterminations": 16,
+        "Demolitions": 10,
+        "Exterminations": 1,
         "LastUpdate": "2023-02-09T00:00:00.000",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 3685,
-                "Exterminations": 16,
+                "Demolitions": 10,
+                "Exterminations": 1,
                 "Time": "2023-02-09T00:00:00.000"
             }
         ]
     },
-    "775654181167562752": {
-        "Name": "upsilon",
-        "Demolitions": 10100,
-        "Exterminations": 102,
-        "LastUpdate": "2023-02-23T09:52:19.900Z",
+    "708235443875086379": {
+        "Name": "blanco2wishhh",
+        "Demolitions": 15,
+        "Exterminations": 1,
+        "LastUpdate": "2023-02-23T14:08:25.643Z",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 12,
+                "Demolitions": 15,
                 "Exterminations": 1,
-                "Time": "2023-02-23T09:44:50.650Z"
-            },
-            {
-                "Demolitions": 10004,
-                "Exterminations": 98,
-                "Time": "2023-02-23T09:52:04.786Z"
-            },
-            {
-                "Demolitions": 10100,
-                "Exterminations": 102,
-                "Time": "2023-02-23T09:52:19.900Z"
+                "Time": "2023-02-23T14:08:25.643Z"
             }
         ]
     }
