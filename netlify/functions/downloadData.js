@@ -47,7 +47,7 @@ const saveCID = async (cid, tags) => {
 
 const createFileAndUpload = async (data, name) => {
 	try {
-		fs.writeFileSync("file.json", JSON.stringify(data));
+		fs.writeFileSync("leaderboard.json", JSON.stringify(data));
 		const cid = await fileUpload(name);
         await saveCID(cid, data.tags)
 		return cid;
