@@ -96,15 +96,18 @@ export default function LeaderboardTable({ leaderboard }) {
             if (index % 2 == 0) {
                 return {
                     backgroundColor: "#044e83",
+                    color: "#ffffff",
                 }
             } else {
                 return {
                     backgroundColor: "#5397c7",
+                    color; "#ffffff",
                 }
             }
         },
         headerStyle: {
             backgroundColor: '#5397c7',
+            color: '#ffffff'
         },
         detailPanelType: "single",
         columnsButton: true,
