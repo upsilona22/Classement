@@ -2,7 +2,7 @@ import MaterialTable from '@material-table/core';
 export default function PlayerHistoryPanel({ rowData }) {
     let columns = [
         {
-            title: 'Demolitions',
+            title: 'Démolitions',
             field: 'Demolitions',
             render: (data) => {
                 return parseInt(data.Demolitions).toLocaleString();
@@ -16,7 +16,7 @@ export default function PlayerHistoryPanel({ rowData }) {
             }
         },
         {
-            title: 'Update Time',
+            title: 'Dernière mise à jour',
             field: 'Time',
             defaultSort: 'desc',
             render: (data) => {
