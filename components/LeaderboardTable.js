@@ -97,17 +97,20 @@ export default function LeaderboardTable({ leaderboard }) {
                 return {
                     backgroundColor: "#044e83",
                     color: "#ffffff",
+                    text-emphasis-color: "#ffffff",
                 }
             } else {
                 return {
                     backgroundColor: "#5397c7",
                     color: "#ffffff",
+                    text-emphasis-color: "#ffffff",
                 }
             }
         },
         headerStyle: {
             backgroundColor: '#5397c7',
             color: '#ffffff'
+            text-emphasis-color: "#ffffff",
         },
         detailPanelType: "single",
         columnsButton: true,
