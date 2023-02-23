@@ -110,7 +110,7 @@ export default function LeaderboardTable({ leaderboard }) {
         headerStyle: {
             backgroundColor: '#5397c7',
             color: '#ffffff'
-            text-emphasis-color: "#ffffff",
+            text-emphasis-color: '#ffffff',
         },
         detailPanelType: "single",
         columnsButton: true,
