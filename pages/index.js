@@ -29,8 +29,20 @@ export default function Home({leaderboard, totals, time}) {
       </main>
       <LeaderboardTable leaderboard={leaderboard}/>
     </div>
+ <h1>Welcome to White</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+          impedit.
+        </p>
+      </div>
+      <img src="/img/RL back.jpg" alt="" />
+    </section>
+    <script src="/app.js"></script>
+  </body>
+</html>
   )
 }
+
 
 export async function getStaticProps(context) {
   let leaderboard = 
