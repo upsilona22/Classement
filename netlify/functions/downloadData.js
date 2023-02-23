@@ -1,68 +1,30 @@
-require("dotenv").config();
-const fs = require("fs");
-const { Web3Storage, getFilesFromPath } = require("web3.storage");
-const { createClient } = require("@supabase/supabase-js");
+const fetch = require('isomorphic-fetch');
+ const Dropbox = require('dropbox').Dropbox;
+ let dbx = new Dropbox({accessToken: process.env.dropToken, fetch: fetch});
 
-const token = process.env.WEB3_TOKEN;
-const storage = new Web3Storage({ token });
+ exports.handler = async function(event, context) {
+     try {
+         const response = await dbx.filesDownload({path: "/leaderboard.json"});
 
-const supabase = createClient(
-	process.env.SUPABASE_URL,
-	process.env.SUPABASE_ANON_KEY
-);
+         if (response.status !== 200) {
+             return {
+                 statusCode: response.status,
+                 message: "Dropbox error"
+             }
+         }
 
-const fileUpload = async (name) => {
-	try {
-		const files = await getFilesFromPath("./file.json");
-		const cid = await storage.put(files, {
-			name: `${name}.json`,
-			wrapWithDirectory: false,
-		});
-		console.log(cid);
-		return cid;
-	} catch (error) {
-		console.log(error);
-		return;
-	}
-};
+         const data = JSON.parse(response.result.fileBinary);
 
-const saveCID = async (cid, tags) => {
-    try {
-        const { data, error, status } = await supabase
-            .from("ipfscid")
-            .insert({ type: "question", cid: cid, tags: tags });
-
-        console.log("Data ", data);
-        console.log("ERROR ", error);
-        console.log("Status ", status);
-        return status
-    } catch (error) {
-        console.log(error);
-        return;
-    }
-}
-
-const createFileAndUpload = async (data, name) => {
-	try {
-		fs.writeFileSync("leaderboard.json", JSON.stringify(data));
-		const cid = await fileUpload(name);
-        await saveCID(cid, data.tags)
-		return cid;
-	} catch (error) {
-		console.log(error);
-		return;
-	}
-};
-
-const getTags = (message) => {
-	let tags = [];
-	message.split(" ").forEach((word) => {
-		if (word.includes("#")) {
-			tags.push(word);
-		}
-	});
-
-	return tags.join(" ");
-};
-
-module.exports = { createFileAndUpload, getTags };
+         return {
+             statusCode: 200,
+             headers: { "content-type": "application/json" },
+             body: JSON.stringify(data)
+         }
+     } catch(err) {
+         console.log(err)
+         return {
+             statusCode: 502,
+             message: "Error connecting to dropbox"
+         }
+     }
+ }
