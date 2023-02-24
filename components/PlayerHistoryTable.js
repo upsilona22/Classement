@@ -59,7 +59,7 @@ export default function PlayerHistoryPanel({ rowData }) {
     };
 
     return <MaterialTable
-        title={rowData.Name + "'s Update History"}
+        title={rowData.Name + "Historique de mise à jour"}
         data={rowData.History}
         columns={columns}
         options={options}
