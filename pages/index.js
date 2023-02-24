@@ -12,12 +12,12 @@ export default function Home({leaderboard, totals, time}) {
       <main>
         <Header title="Bienvenue sur le classement des démolitions francophones!" />
         <p className="description">
-          Rejoignez le classement en effectuant votre demande sur le discord de la French Demo Community <a href="https://discord.gg/HVuU3QEC">
+          Rejoignez le classement en effectuant votre demande sur le discord de la French Demo Community <a href="https://discord.gg/HVuU3QEC">.
             https://discord.gg/HVuU3QEC</a>
         </p>
         <p>
           Collectivement les {totals.players.toLocaleString()} joueurs ont démolis {totals.demos.toLocaleString()} joueurs, 
-          amenant à un total de {totals.exterms.toLocaleString()} exterminations
+          amenant à un total de {totals.exterms.toLocaleString()} exterminations.
         </p>
         <p>
           Les joueurs victimes de démolitions ont mis {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
