@@ -29,7 +29,8 @@ exports.handler = async function(event, context) {
                 "Exterminations": 1,
                 "Time": "2023-02-25T12:33:33.028Z"
             }
-        ]
+        ],
+        "Country": "FRA"
     }
 })
   };
