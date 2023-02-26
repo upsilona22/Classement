@@ -73,7 +73,7 @@ exports.handler = async function(event, context) {
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
-        "Demolitions": 15646,
+        "Demolitions": 18077,
         "Exterminations": 765,
         "LastUpdate": "2015-07-07T00:00:00.000",
         "Authorized": 0,
