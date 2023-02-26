@@ -73,7 +73,7 @@ exports.handler = async function(event, context) {
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
-        "Demolitions": 18077,
+        "Demolitions": 15646,
         "Exterminations": 765,
         "LastUpdate": "2015-07-07T00:00:00.000",
         "Authorized": 0,
@@ -109,6 +109,36 @@ exports.handler = async function(event, context) {
             }
         ],
         "Country": "Bretagne"
+    },
+    "662445739544281119": {
+        "Name": "Kowaqs",
+        "Demolitions": 4045,
+        "Exterminations": 12,
+        "LastUpdate": "2023-02-26T13:17:10.325Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 4045,
+                "Exterminations": 12,
+                "Time": "2023-02-26T13:17:10.325Z"
+            }
+        ],
+        "Country": "France"
+    },
+    "419222953746759710": {
+        "Name": "M.Vert",
+        "Demolitions": 2066,
+        "Exterminations": 6,
+        "LastUpdate": "2023-02-26T13:18:00.593Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 2066,
+                "Exterminations": 6,
+                "Time": "2023-02-26T13:18:00.593Z"
+            }
+        ],
+        "Country": "France"
     }
 })
   };
