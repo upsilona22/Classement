@@ -110,7 +110,7 @@ exports.handler = async function(event, context) {
                 "Time": "2023-02-26T07:25:20.094Z"
             }
         ],
-        "Country": "Bretagne"
+        "Country": "France"
     },
     "662445739544281119": {
         "Name": "Kowaqs",
