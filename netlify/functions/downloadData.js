@@ -4,19 +4,18 @@ exports.handler = async function(event, context) {
     'content-type': 'application/json',
     body: JSON.stringify({
     "1": {
-        "Name": "French Demo Community",
-        "Demolitions": 1,
-        "Exterminations": 0,
+        "Name": "BOT",
+        "Demolitions": 10,
+        "Exterminations": 1,
         "LastUpdate": "2023-02-09T00:00:00.000",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 1,
-                "Exterminations": 0,
+                "Demolitions": 10,
+                "Exterminations": 1,
                 "Time": "2023-02-09T00:00:00.000"
             }
-        ],
-        "Country": "France"
+        ]
     },
     "325920058146816000": {
         "Name": "FuriousPanda",
@@ -70,8 +69,7 @@ exports.handler = async function(event, context) {
                 "Exterminations": 1,
                 "Time": "2023-02-25T13:00:50.346Z"
             }
-        ],
-        "Country": "France"
+        ]
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
@@ -153,6 +151,20 @@ exports.handler = async function(event, context) {
                 "Demolitions": 5750,
                 "Exterminations": 77,
                 "Time": "2023-02-26T17:49:27.483Z"
+            }
+        ]
+    },
+    "708235443875086379": {
+        "Name": "blanco2wishhh",
+        "Demolitions": 2146,
+        "Exterminations": 127,
+        "LastUpdate": "2023-02-27T15:32:59.459Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 2146,
+                "Exterminations": 127,
+                "Time": "2023-02-27T15:32:59.459Z"
             }
         ]
     }
