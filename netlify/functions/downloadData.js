@@ -34,23 +34,23 @@ exports.handler = async function(event, context) {
     },
     "775654181167562752": {
         "Name": "Upsilon",
-        "Demolitions": 3690,
-        "Exterminations": 1,
+        "Demolitions": 1302,
+        "Exterminations": 3,
         "LastUpdate": "2023-02-26T12:39:43.318Z",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 3685,
+                "Demolitions": 685,
                 "Exterminations": 1,
                 "Time": "2023-02-25T12:44:45.536Z"
             },
             {
-                "Demolitions": 3686,
+                "Demolitions": 686,
                 "Exterminations": 1,
                 "Time": "2023-02-25T15:13:33.325Z"
             },
             {
-                "Demolitions": 3690,
+                "Demolitions": 690,
                 "Exterminations": 1,
                 "Time": "2023-02-26T12:39:43.318Z"
             }
@@ -69,7 +69,8 @@ exports.handler = async function(event, context) {
                 "Exterminations": 1,
                 "Time": "2023-02-25T13:00:50.346Z"
             }
-        ]
+        ],
+        "Country": "France"
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
@@ -166,7 +167,38 @@ exports.handler = async function(event, context) {
                 "Exterminations": 127,
                 "Time": "2023-02-27T15:32:59.459Z"
             }
-        ]
+        ],
+        "Country": "France"
+    },
+    "1014076762931613786": {
+        "Name": "joakimbg69",
+        "Demolitions": 5144,
+        "Exterminations": 213,
+        "LastUpdate": "2023-03-01T12:37:58.039Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 5144,
+                "Exterminations": 213,
+                "Time": "2023-03-01T12:37:58.039Z"
+            }
+        ],
+        "Country": "France"
+    },
+    "946402684909551616": {
+        "Name": "<@946402684909551616>",
+        "Demolitions": 581,
+        "Exterminations": 2,
+        "LastUpdate": "2023-03-01T13:23:01.838Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 581,
+                "Exterminations": 2,
+                "Time": "2023-03-01T13:23:01.838Z"
+            }
+        ],
+        "Country": "FRANCE"
     }
 })
   };
