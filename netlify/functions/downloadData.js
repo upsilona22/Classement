@@ -186,7 +186,7 @@ exports.handler = async function(event, context) {
         "Country": "France"
     },
     "946402684909551616": {
-        "Name": "<Wolf Shadow000>",
+        "Name": "Wolf Shadow000",
         "Demolitions": 581,
         "Exterminations": 2,
         "LastUpdate": "2023-03-01T13:23:01.838Z",
