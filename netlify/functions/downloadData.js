@@ -177,14 +177,14 @@ exports.handler = async function(event, context) {
     },
     "1014076762931613786": {
         "Name": "joakimbg69",
-        "Demolitions": 5144,
+        "Demolitions": 5237,
         "Exterminations": 213,
-        "LastUpdate": "2023-03-01T12:37:58.039Z",
+        "LastUpdate": "2023-03-01T16:37:58.039Z",
         "Authorized": 0,
         "History": [
             {
                 "Demolitions": 5144,
-                "Exterminations": 213,
+                "Exterminations": 223,
                 "Time": "2023-03-01T12:37:58.039Z"
             }
         ],
