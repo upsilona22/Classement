@@ -19,15 +19,15 @@ exports.handler = async function(event, context) {
     },
     "325920058146816000": {
         "Name": "FuriousPanda",
-        "Demolitions": 138017,
-        "Exterminations": 10697,
-        "LastUpdate": "2023-02-25T12:33:33.028Z",
+        "Demolitions": 140000,
+        "Exterminations": 10933,
+        "LastUpdate": "2023-03-01T15:53:33.028Z",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 14000,
-                "Exterminations": 1,
-                "Time": "2023-02-25T12:33:33.028Z"
+                "Demolitions": 138017,
+                "Exterminations": 10697,
+                "Time": "2023-03-01T15:53:33.028Z"
             }
         ],
         "Country": "FRANCE"
