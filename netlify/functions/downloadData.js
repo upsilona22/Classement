@@ -21,13 +21,13 @@ exports.handler = async function(event, context) {
         "Name": "FuriousPanda",
         "Demolitions": 140000,
         "Exterminations": 10933,
-        "LastUpdate": "2023-03-01T15:53:33.028Z",
+        "LastUpdate": "2023-02-25T12:33:33.028Z",
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 138017,
-                "Exterminations": 10697,
-                "Time": "2023-03-01T15:53:33.028Z"
+                "Demolitions": 14000,
+                "Exterminations": 1,
+                "Time": "2023-02-25T12:33:33.028Z"
             }
         ],
         "Country": "FRANCE"
@@ -36,7 +36,7 @@ exports.handler = async function(event, context) {
         "Name": "Upsilon",
         "Demolitions": 1302,
         "Exterminations": 3,
-        "LastUpdate": "2023-02-26T12:39:43.318Z",
+        "LastUpdate": "2023-03-01T15:13:18.445Z",
         "Authorized": 0,
         "History": [
             {
@@ -53,6 +53,11 @@ exports.handler = async function(event, context) {
                 "Demolitions": 690,
                 "Exterminations": 1,
                 "Time": "2023-02-26T12:39:43.318Z"
+            },
+            {
+                "Demolitions": 1302,
+                "Exterminations": 3,
+                "Time": "2023-03-01T15:13:18.445Z"
             }
         ],
         "Country": "France"
@@ -186,7 +191,7 @@ exports.handler = async function(event, context) {
         "Country": "France"
     },
     "946402684909551616": {
-        "Name": "Wolf Shadow000",
+        "Name": "<@946402684909551616>",
         "Demolitions": 581,
         "Exterminations": 2,
         "LastUpdate": "2023-03-01T13:23:01.838Z",
@@ -199,6 +204,21 @@ exports.handler = async function(event, context) {
             }
         ],
         "Country": "FRANCE"
+    },
+    "511696186022035477": {
+        "Name": "mameul",
+        "Demolitions": 11192,
+        "Exterminations": 8,
+        "LastUpdate": "2023-03-01T15:11:33.787Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 11192,
+                "Exterminations": 8,
+                "Time": "2023-03-01T15:11:33.787Z"
+            }
+        ],
+        "Country": "france"
     }
 })
   };
