@@ -40,17 +40,17 @@ exports.handler = async function(event, context) {
         "Authorized": 0,
         "History": [
             {
-                "Demolitions": 685,
+                "Demolitions": 3685,
                 "Exterminations": 1,
                 "Time": "2023-02-25T12:44:45.536Z"
             },
             {
-                "Demolitions": 686,
+                "Demolitions": 3686,
                 "Exterminations": 1,
                 "Time": "2023-02-25T15:13:33.325Z"
             },
             {
-                "Demolitions": 690,
+                "Demolitions": 3690,
                 "Exterminations": 1,
                 "Time": "2023-02-26T12:39:43.318Z"
             },
@@ -162,15 +162,20 @@ exports.handler = async function(event, context) {
     },
     "708235443875086379": {
         "Name": "blanco2wishhh",
-        "Demolitions": 2146,
-        "Exterminations": 127,
-        "LastUpdate": "2023-02-27T15:32:59.459Z",
+        "Demolitions": 2241,
+        "Exterminations": 137,
+        "LastUpdate": "2023-03-02T21:03:16.773Z",
         "Authorized": 0,
         "History": [
             {
                 "Demolitions": 2146,
                 "Exterminations": 127,
                 "Time": "2023-02-27T15:32:59.459Z"
+            },
+            {
+                "Demolitions": 2241,
+                "Exterminations": 137,
+                "Time": "2023-03-02T21:03:16.773Z"
             }
         ],
         "Country": "France"
@@ -179,13 +184,18 @@ exports.handler = async function(event, context) {
         "Name": "joakimbg69",
         "Demolitions": 5237,
         "Exterminations": 223,
-        "LastUpdate": "2023-03-01T16:37:58.039Z",
+        "LastUpdate": "2023-03-01T15:56:39.842Z",
         "Authorized": 0,
         "History": [
             {
                 "Demolitions": 5144,
                 "Exterminations": 213,
                 "Time": "2023-03-01T12:37:58.039Z"
+            },
+            {
+                "Demolitions": 5237,
+                "Exterminations": 223,
+                "Time": "2023-03-01T15:56:39.842Z"
             }
         ],
         "Country": "France"
@@ -219,6 +229,35 @@ exports.handler = async function(event, context) {
             }
         ],
         "Country": "france"
+    },
+    "722125807031418898": {
+        "Name": "et BOOOOOOM (lageon)",
+        "Demolitions": 2676,
+        "Exterminations": 207,
+        "LastUpdate": "2023-03-02T13:41:48.779Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 2676,
+                "Exterminations": 207,
+                "Time": "2023-03-02T13:41:48.779Z"
+            }
+        ]
+    },
+    "237677971601621002": {
+        "Name": "Belgie",
+        "Demolitions": 3228,
+        "Exterminations": 4,
+        "LastUpdate": "2023-03-03T13:59:28.345Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 3228,
+                "Exterminations": 4,
+                "Time": "2023-03-03T13:59:28.345Z"
+            }
+        ],
+        "Country": "France"
     }
 })
   };
