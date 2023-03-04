@@ -34,8 +34,8 @@ exports.handler = async function(event, context) {
     },
     "775654181167562752": {
         "Name": "Upsilon",
-        "Demolitions": 1330,
-        "Exterminations": 5,
+        "Demolitions": 1302,
+        "Exterminations": 3,
         "LastUpdate": "2023-03-01T15:13:18.445Z",
         "Authorized": 0,
         "History": [
@@ -258,6 +258,34 @@ exports.handler = async function(event, context) {
             }
         ],
         "Country": "France"
+    },
+    "953346698451779645": {
+        "Name": "TowerInfiniti",
+        "Demolitions": 2601,
+        "Exterminations": 17,
+        "LastUpdate": "2023-03-03T15:33:40.127Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 2601,
+                "Exterminations": 17,
+                "Time": "2023-03-03T15:33:40.127Z"
+            }
+        ]
+    },
+    "413056287799115776": {
+        "Name": "Khalfricks",
+        "Demolitions": 1450,
+        "Exterminations": 33,
+        "LastUpdate": "2023-03-04T04:53:22.574Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 1450,
+                "Exterminations": 33,
+                "Time": "2023-03-04T04:53:22.574Z"
+            }
+        ]
     }
 })
   };
