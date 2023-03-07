@@ -182,9 +182,9 @@ exports.handler = async function(event, context) {
     },
     "1014076762931613786": {
         "Name": "joakimbg69",
-        "Demolitions": 5237,
-        "Exterminations": 223,
-        "LastUpdate": "2023-03-01T15:56:39.842Z",
+        "Demolitions": 5754,
+        "Exterminations": 271,
+        "LastUpdate": "2023-03-07T14:21:11.364Z",
         "Authorized": 0,
         "History": [
             {
@@ -196,6 +196,11 @@ exports.handler = async function(event, context) {
                 "Demolitions": 5237,
                 "Exterminations": 223,
                 "Time": "2023-03-01T15:56:39.842Z"
+            },
+            {
+                "Demolitions": 5754,
+                "Exterminations": 271,
+                "Time": "2023-03-07T14:21:11.364Z"
             }
         ],
         "Country": "France"
@@ -290,18 +295,72 @@ exports.handler = async function(event, context) {
     },
     "296297457812504576": {
         "Name": "Lbmav",
-        "Demolitions": 509,
-        "Exterminations": 1,
-        "LastUpdate": "2023-03-04T13:55:33.582Z",
+        "Demolitions": 621,
+        "Exterminations": 5,
+        "LastUpdate": "2023-03-07T09:08:36.434Z",
         "Authorized": 0,
         "History": [
             {
                 "Demolitions": 509,
                 "Exterminations": 1,
                 "Time": "2023-03-04T13:55:33.582Z"
+            },
+            {
+                "Demolitions": 600,
+                "Exterminations": 4,
+                "Time": "2023-03-06T12:15:30.867Z"
+            },
+            {
+                "Demolitions": 621,
+                "Exterminations": 5,
+                "Time": "2023-03-07T09:08:36.434Z"
             }
         ],
         "Country": "Belgique"
+    },
+    "325739440108732417": {
+        "Name": "Texounet_TV",
+        "Demolitions": 12877,
+        "Exterminations": 33,
+        "LastUpdate": "2023-03-06T13:25:54.211Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 12877,
+                "Exterminations": 33,
+                "Time": "2023-03-06T13:25:54.211Z"
+            }
+        ],
+        "Country": "France"
+    },
+    "172112890516602880": {
+        "Name": "Skyzouz_",
+        "Demolitions": 6206,
+        "Exterminations": 9,
+        "LastUpdate": "2023-03-06T18:37:45.874Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 6206,
+                "Exterminations": 9,
+                "Time": "2023-03-06T18:37:45.874Z"
+            }
+        ],
+        "Country": "France"
+    },
+    "175024535030988802": {
+        "Name": "BanG",
+        "Demolitions": 10516,
+        "Exterminations": 22,
+        "LastUpdate": "2023-03-07T08:48:13.490Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 10516,
+                "Exterminations": 22,
+                "Time": "2023-03-07T08:48:13.490Z"
+            }
+        ]
     }
 })
   };
