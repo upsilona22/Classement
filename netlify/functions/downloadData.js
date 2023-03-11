@@ -280,8 +280,8 @@ exports.handler = async function(event, context) {
     },
     "413056287799115776": {
         "Name": "Khalfricks",
-        "Demolitions": 1450,
-        "Exterminations": 33,
+        "Demolitions": 1562,
+        "Exterminations": 34,
         "LastUpdate": "2023-03-04T04:53:22.574Z",
         "Authorized": 0,
         "History": [
