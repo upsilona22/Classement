@@ -34,8 +34,8 @@ exports.handler = async function(event, context) {
     },
     "775654181167562752": {
         "Name": "Upsilon",
-        "Demolitions": 1302,
-        "Exterminations": 3,
+        "Demolitions": 1330,
+        "Exterminations": 5,
         "LastUpdate": "2023-03-01T15:13:18.445Z",
         "Authorized": 0,
         "History": [
