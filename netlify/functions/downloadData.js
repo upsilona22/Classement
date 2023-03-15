@@ -19,8 +19,8 @@ exports.handler = async function(event, context) {
     },
     "325920058146816000": {
         "Name": "FuriousPanda",
-        "Demolitions": 140000,
-        "Exterminations": 10933,
+        "Demolitions": 142957,
+        "Exterminations": 11238,
         "LastUpdate": "2023-02-25T12:33:33.028Z",
         "Authorized": 0,
         "History": [
@@ -162,8 +162,8 @@ exports.handler = async function(event, context) {
     },
     "708235443875086379": {
         "Name": "blanco2wishhh",
-        "Demolitions": 2461,
-        "Exterminations": 156,
+        "Demolitions": 2500,
+        "Exterminations": 160,
         "LastUpdate": "2023-03-12T20:14:48.035Z",
         "Authorized": 0,
         "History": [
