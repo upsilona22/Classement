@@ -36,7 +36,7 @@ exports.handler = async function(event, context) {
         "Name": "Upsilon",
         "Demolitions": 1330,
         "Exterminations": 5,
-        "LastUpdate": "2023-03-01T15:13:18.445Z",
+        "LastUpdate": "2023-03-14T08:26:41.940Z",
         "Authorized": 0,
         "History": [
             {
@@ -58,6 +58,11 @@ exports.handler = async function(event, context) {
                 "Demolitions": 1302,
                 "Exterminations": 3,
                 "Time": "2023-03-01T15:13:18.445Z"
+            },
+            {
+                "Demolitions": 1330,
+                "Exterminations": 5,
+                "Time": "2023-03-14T08:26:41.940Z"
             }
         ],
         "Country": "France"
@@ -79,7 +84,7 @@ exports.handler = async function(event, context) {
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
-        "Demolitions": 18077,
+        "Demolitions": 15646,
         "Exterminations": 765,
         "LastUpdate": "2015-07-07T00:00:00.000",
         "Authorized": 0,
@@ -164,7 +169,7 @@ exports.handler = async function(event, context) {
         "Name": "blanco2wishhh",
         "Demolitions": 2500,
         "Exterminations": 160,
-        "LastUpdate": "2023-03-12T20:14:48.035Z",
+        "LastUpdate": "2023-03-14T15:58:51.189Z",
         "Authorized": 0,
         "History": [
             {
@@ -186,6 +191,11 @@ exports.handler = async function(event, context) {
                 "Demolitions": 2461,
                 "Exterminations": 156,
                 "Time": "2023-03-12T20:14:48.035Z"
+            },
+            {
+                "Demolitions": 2500,
+                "Exterminations": 160,
+                "Time": "2023-03-14T15:58:51.189Z"
             }
         ],
         "Country": "France"
@@ -290,9 +300,9 @@ exports.handler = async function(event, context) {
     },
     "413056287799115776": {
         "Name": "Khalfricks",
-        "Demolitions": 1562,
-        "Exterminations": 34,
-        "LastUpdate": "2023-03-10T04:00:14.561Z",
+        "Demolitions": 1851,
+        "Exterminations": 38,
+        "LastUpdate": "2023-03-20T20:41:09.902Z",
         "Authorized": 0,
         "History": [
             {
@@ -304,6 +314,11 @@ exports.handler = async function(event, context) {
                 "Demolitions": 1562,
                 "Exterminations": 34,
                 "Time": "2023-03-10T04:00:14.561Z"
+            },
+            {
+                "Demolitions": 1851,
+                "Exterminations": 38,
+                "Time": "2023-03-20T20:41:09.902Z"
             }
         ],
         "Country": "France"
@@ -392,7 +407,6 @@ exports.handler = async function(event, context) {
         ],
         "Country": "France"
     },
-      
     "272501604865933315": {
         "Name": "lologannus",
         "Demolitions": 4811,
@@ -407,6 +421,20 @@ exports.handler = async function(event, context) {
             }
         ],
         "Country": "France"
+    },
+    "862631702495887401": {
+        "Name": "LE DICHE",
+        "Demolitions": 1199,
+        "Exterminations": 8,
+        "LastUpdate": "2023-03-20T14:30:48.925Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 1199,
+                "Exterminations": 8,
+                "Time": "2023-03-20T14:30:48.925Z"
+            }
+        ]
     }
 })
   };
