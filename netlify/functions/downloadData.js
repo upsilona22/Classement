@@ -84,8 +84,8 @@ exports.handler = async function(event, context) {
     },
     "1034806809078280213": {
         "Name": "Velvet-crowe33",
-        "Demolitions": 15646,
-        "Exterminations": 765,
+        "Demolitions": 20002,
+        "Exterminations": 921,
         "LastUpdate": "2015-07-07T00:00:00.000",
         "Authorized": 0,
         "History": [],
@@ -123,15 +123,20 @@ exports.handler = async function(event, context) {
     },
     "662445739544281119": {
         "Name": "Kowaqs",
-        "Demolitions": 4045,
-        "Exterminations": 12,
-        "LastUpdate": "2023-02-26T13:17:10.325Z",
+        "Demolitions": 4700,
+        "Exterminations": 18,
+        "LastUpdate": "2023-03-22T14:04:25.137Z",
         "Authorized": 0,
         "History": [
             {
                 "Demolitions": 4045,
                 "Exterminations": 12,
                 "Time": "2023-02-26T13:17:10.325Z"
+            },
+            {
+                "Demolitions": 4700,
+                "Exterminations": 18,
+                "Time": "2023-03-22T14:04:25.137Z"
             }
         ],
         "Country": "France"
@@ -167,9 +172,9 @@ exports.handler = async function(event, context) {
     },
     "708235443875086379": {
         "Name": "blanco2wishhh",
-        "Demolitions": 2500,
-        "Exterminations": 160,
-        "LastUpdate": "2023-03-14T15:58:51.189Z",
+        "Demolitions": 2700,
+        "Exterminations": 182,
+        "LastUpdate": "2023-03-22T11:17:19.234Z",
         "Authorized": 0,
         "History": [
             {
@@ -196,6 +201,16 @@ exports.handler = async function(event, context) {
                 "Demolitions": 2500,
                 "Exterminations": 160,
                 "Time": "2023-03-14T15:58:51.189Z"
+            },
+            {
+                "Demolitions": 2550,
+                "Exterminations": 164,
+                "Time": "2023-03-21T21:24:36.349Z"
+            },
+            {
+                "Demolitions": 2700,
+                "Exterminations": 182,
+                "Time": "2023-03-22T11:17:19.234Z"
             }
         ],
         "Country": "France"
@@ -433,6 +448,39 @@ exports.handler = async function(event, context) {
                 "Demolitions": 1199,
                 "Exterminations": 8,
                 "Time": "2023-03-20T14:30:48.925Z"
+            }
+        ]
+    },
+    "259799627421843457": {
+        "Name": "AxelRe60",
+        "Demolitions": 3330,
+        "Exterminations": 37,
+        "LastUpdate": "2023-03-21T22:36:10.540Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 3202,
+                "Exterminations": 23,
+                "Time": "2023-03-21T21:24:31.640Z"
+            },
+            {
+                "Demolitions": 3330,
+                "Exterminations": 37,
+                "Time": "2023-03-21T22:36:10.540Z"
+            }
+        ]
+    },
+    "242702071118299136": {
+        "Name": "Serzen",
+        "Demolitions": 6862,
+        "Exterminations": 20,
+        "LastUpdate": "2023-03-22T13:22:24.070Z",
+        "Authorized": 0,
+        "History": [
+            {
+                "Demolitions": 6862,
+                "Exterminations": 20,
+                "Time": "2023-03-22T13:22:24.070Z"
             }
         ]
     }
