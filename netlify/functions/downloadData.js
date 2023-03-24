@@ -453,8 +453,8 @@ exports.handler = async function(event, context) {
     },
     "259799627421843457": {
         "Name": "AxelRe60",
-        "Demolitions": 3330,
-        "Exterminations": 37,
+        "Demolitions": 3547,
+        "Exterminations": 63,
         "LastUpdate": "2023-03-21T22:36:10.540Z",
         "Authorized": 0,
         "History": [
